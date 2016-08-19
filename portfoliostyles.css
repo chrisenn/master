@@ -1,0 +1,137 @@
+html, body 
+{
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	font-family:Helvetica;
+}
+
+#navbar
+{
+	background:#1a1a1a;
+	color:#fff;
+	padding-top:1px;
+	padding-bottom:1px;
+	text-align:right;
+}
+
+#navbar ul
+{
+	list-style-type:none;
+	margin-right:5%;
+}
+
+#navbar li
+{
+	display:inline;
+	margin-right:3%;
+}
+
+#navbar li a
+{
+	color:#fff;
+	text-decoration:none;
+}
+
+#navbar li a:hover
+{
+	color:#eee;
+	text-decoration:underline;
+}
+
+#navbar ul .selected
+{
+	color:#66d9ff;
+	font-weight:bold; 
+}
+
+#hero
+{
+	background: #00A7E1 url("desk.jpg") left center/cover no-repeat !important;
+	width:100%;
+	height:30%;
+	background-size:auto;
+	margin-top:0;
+	font-size:2rem;	
+	text-align:center;
+}
+
+#hero span
+{
+	display:inline-block;
+	vertical-align:middle;
+	color:#fff;
+}
+
+#content
+{
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	background:#ffffcc;
+	padding-left:10%;
+	padding-right:10%;
+	margin-top:0;
+}
+
+.case .thumb 
+{
+	display:inline-block;
+	width:30%;
+}
+
+.case .thumb img
+{
+	width:100%;
+}
+
+.description 
+{
+	display:inline-block;
+	vertical-align:top;
+	margin-left:3%;
+	font-size:1rem;
+}
+
+.case .description h1
+{
+	font-size:1rem;
+}
+
+.case .description p ul
+{
+	padding-top:0;
+}
+
+button
+{
+	background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+#about
+{
+	background:#fff;
+}
+
+#about img
+{
+	border-radius:50%;
+	width:25%;
+	display:inline-block;
+}
+
+#about p
+{
+	display:inline-block;
+	width:
+}
