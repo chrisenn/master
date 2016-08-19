@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth
+}
+
 html, body 
 {
 	margin:0;
@@ -66,21 +70,25 @@ body
 	color:#fff;
 }
 
-#content
+.content
 {
 	width:75%;
 	margin-left:auto;
 	margin-right:auto;
-	background:#ffffcc;
 	padding-left:10%;
 	padding-right:10%;
-	margin-top:0;
+	padding-top:1%;
 }
 
-.case .thumb 
+#work
+{
+	background:#FEF6E3;
+}
+
+.thumb 
 {
 	display:inline-block;
-	width:30%;
+	width:20%;
 }
 
 .case .thumb img
@@ -123,15 +131,17 @@ button
 	background:#fff;
 }
 
+
 #about img
 {
 	border-radius:50%;
-	width:25%;
+	width:20%;
 	display:inline-block;
 }
 
-#about p
+#about .description
 {
+	width:50%;
 	display:inline-block;
-	width:
 }
+
