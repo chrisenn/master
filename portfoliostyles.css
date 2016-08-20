@@ -6,6 +6,7 @@ html, body
 {
 	margin:0;
 	padding:0;
+	height: 100%;
 }
 
 body
@@ -63,7 +64,7 @@ body
 	position:relative;
 }
 
-#hero span
+#hero #headline
 {
 	display:inline-block;
 	color:#fff;
@@ -72,13 +73,13 @@ body
 	top:30%;
 }
 
-#hero span h1
+#hero #headline h1
 {
 	margin:0;
 	font-size:3rem;
 }
 
-#hero span h2
+#hero #headline h2
 {
 	margin:0;
 	font-size:2rem;
@@ -98,7 +99,7 @@ body
 
 #work
 {
-	background:#FEF6E3;
+	background:#fff;
 }
 
 .thumb 
@@ -144,7 +145,7 @@ h2
 
 #about
 {
-	background:#fff;
+	background:#F0F0F0;
 }
 
 
