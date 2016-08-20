@@ -104,7 +104,7 @@ body
 	font-size:1rem;
 }
 
-.case .description h1
+.case .description h2
 {
 	font-size:1rem;
 }
@@ -141,11 +141,16 @@ button
 
 #about .description
 {
-	width:50%;
+	width:66%;
 	display:inline-block;
 }
 
 footer
 {
 	height:15%;
+}
+
+h1
+{
+	text-align:center;
 }
