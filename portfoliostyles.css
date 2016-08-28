@@ -25,6 +25,11 @@ body
 	padding-top:1%;
 }
 
+.pi .content ul
+{
+	margin-top:0px;
+}
+
 h1
 {
 	text-align:center;
@@ -126,7 +131,7 @@ h2
 	display:none;
 }
 
-@media screen and (max-width:326px)
+@media screen and (max-width:329px)
 {
 	.pi #headline h2
 	{
@@ -296,4 +301,52 @@ h2
 #contact img
 {
 	margin-right:10px;
+}
+
+/*========================================== PI ============================================================*/
+
+.pi #diagram
+{
+	width:50%
+}
+
+
+@media screen and (max-width:1100px)
+{
+	
+	.pi #diagram
+	{
+		width:60%;
+	}
+}
+
+@media screen and (max-width:900px)
+{
+	
+	.pi #diagram
+	{
+		width:80%;
+	}
+}
+
+@media screen and (max-width:700px)
+{
+	
+	.pi #diagram
+	{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:550px)
+{
+	.pi #diagram
+	{
+		display:none;
+	}
+	
+	.pi ul.responsive
+	{
+		display:inline-block;
+	}
 }
