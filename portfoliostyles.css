@@ -46,21 +46,39 @@ h2
 {
 	background:#1a1a1a;
 	color:#fff;
-	padding-top:1px;
-	padding-bottom:1px;
-	text-align:right;
+	padding-top:1%;
+	padding-bottom:1%;
+	text-align:center;
+}
+
+#logo
+{
+	display: inline;
+	text-align:left;
+	vertical-align:middle;
+}
+
+#logo a
+{
+	color:#fff;
+	text-decoration:none;
+	font-family:'Arial';
+	margin-left:1%;
+	font-size:16pt;
 }
 
 #navbar ul
 {
+	display:inline;
 	list-style-type:none;
-	margin-right:5%;
+	margin-left:-1%;
 }
 
 #navbar li
 {
 	display:inline;
-	margin-right:3%;
+	margin-right:1%;
+	margin-left:1%;
 }
 
 #navbar li a
