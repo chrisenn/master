@@ -205,12 +205,13 @@ h2
 	background:#004F69;
 }
 
-@media screen and (max-width:1286px)
+@media screen and (max-width:1121px)
 {
 	.case img
 	{
-		width:50%;
+		width:50%;	
 	}
+	
 }
 
 @media screen and (max-width:800px)
@@ -276,7 +277,30 @@ h2
 	
 	#about img
 	{
-		width:40%;
+		width:50%;
+	}
+	
+	#about .description
+	{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:400px)
+{	
+	#about img
+	{
+		width:100%;
+	}
+	
+		#about
+	{
+		text-align:left;
+	}
+	
+	#about .description
+	{
+		width:100%;
 	}
 }
 
