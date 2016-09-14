@@ -106,9 +106,8 @@ h2
 
 #hero
 {
-	width:100%;
-	height:40%;
-	background-size:auto;
+	height:50%;
+	/*background-size:auto;*/
 	text-align:center;
 	vertical-align:middle;
 	position:relative;
@@ -116,7 +115,11 @@ h2
 
 .home #hero
 {
-	background: #00A7E1 url("idea3.jpg") left center/cover no-repeat !important;
+	background: #00A7E1 url("idea3.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pi #hero
@@ -167,6 +170,12 @@ h2
 
 @media screen and (max-width:800px)
 {
+
+	#hero
+	{
+		height:50%
+	}
+	
 	#headline h2
 	{
 		font-weight:normal;
@@ -238,7 +247,15 @@ h2
 
 #about
 {
-	background:#F0F0F0;
+	/*background:#F0F0F0;*/
+	background-image:url("plantb.jpg");
+	color:#fff;
+	padding-top:2%;
+	
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #about img
