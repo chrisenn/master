@@ -116,6 +116,22 @@ table.responsive
 	}
 }
 
+@media screen and (max-width:950px)
+{
+	#storyboard
+	{
+		width:100%
+	}
+}
+
+@media screen and (max-width:710px)
+{
+	#persona
+	{
+		width:100%
+	}
+}
+
 td
 {
 	text-align:left;
@@ -174,7 +190,6 @@ td
 {
 	display:inline;
 	list-style-type:none;
-	margin-left:-1%;
 }
 
 #navbar li
@@ -202,11 +217,21 @@ td
 	font-weight:bold; 
 }
 
+@media screen and (max-width:800px)
+{
+	#navbar li
+	{
+		display:inline;
+		margin-right:1%;
+		margin-left:1%;
+	}
+}
+
 /*========================================== Hero Image ============================================================*/
 
 #hero
 {
-	height:50%;
+	height:100%;
 	/*background-size:auto;*/
 	text-align:center;
 	vertical-align:middle;
@@ -225,6 +250,7 @@ td
 .pi #hero
 {
 	background: #1A1A1A url("tools2.jpg") left center/cover no-repeat !important;
+	height:60%;
 }
 
 #headline
@@ -271,7 +297,7 @@ td
 @media screen and (max-width:800px)
 {
 
-	#hero
+	.pi #hero
 	{
 		height:50%
 	}
@@ -311,7 +337,7 @@ td
 
 .button
 {
-	background-color: #008CBA; 
+	background-color: #007298;
     border: none;
     color: white;
     padding: 10px 20px;
