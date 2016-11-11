@@ -30,6 +30,7 @@ h1
 {
 	font-family: 'Roboto', serif;
 	text-align:center;
+	
 }
 
 .home h2
@@ -113,6 +114,17 @@ table.responsive
 	table.responsive
 	{
 		display:block;
+		margin-top:10%;
+	}
+	
+	blockquote
+	{
+		margin-left:0;
+	}
+	
+	li
+	{
+		margin-top:5%;
 	}
 }
 
@@ -126,9 +138,14 @@ table.responsive
 
 @media screen and (max-width:710px)
 {
-	#persona
+	img.unresponsive
 	{
-		width:100%
+		display:none;
+	}
+	
+	img.responsive
+	{
+		display:block;
 	}
 }
 
@@ -163,58 +180,118 @@ td
 /*========================================== Navbar ============================================================*/
 #navbar
 {
-	background:#1a1a1a;
-	color:#fff;
+	background:#fff;
+	color:#812F88;
 	padding-top:1%;
 	padding-bottom:1%;
-	text-align:center;
+}
+
+#links
+{
+	text-align:right;
+	float:right;
+	width:70%;
+	padding-top:8px;
+	
 }
 
 #logo
 {
-	display: inline;
+	display: inline-block;
 	text-align:left;
-	vertical-align:middle;
+	position:relative;
 }
 
 #logo a
 {
-	color:#fff;
+	color:#812F88;
 	text-decoration:none;
 	font-family:'Arial';
 	margin-left:1%;
 	font-size:16pt;
 }
 
-#navbar ul
+#navbar #links ul
 {
 	display:inline;
 	list-style-type:none;
 }
 
-#navbar li
+#navbar #links li
 {
 	display:inline;
-	margin-right:1%;
-	margin-left:1%;
+	margin-right:2%;
+	margin-left:2%;
 }
 
 #navbar li a
 {
-	color:#fff;
+	color:#812F88;
 	text-decoration:none;
 }
 
-#navbar li a:hover
+#navbar #links li a:hover
 {
-	color:#eee;
+	color:#BB1553;
 	text-decoration:underline;
 }
 
-#navbar ul .selected
+#navbar ul .selected,
+#navbar ul li a.selected
 {
-	color:#66d9ff;
+	color:#BB1553;
 	font-weight:bold; 
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+	float:right;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #5A76C0;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#mobmenu
+{
+	display:none;
+	text-align:right;	
+}
+
+#mobmenu ul li
+{
+	display:block;
+	list-style-type:none;
+	margin-top:3%;
+	margin-bottom:3%;
+	font-size:1.2rem;
+}
+
+.change #mobmenu
+{
+	display:block;
 }
 
 @media screen and (max-width:800px)
@@ -222,10 +299,54 @@ td
 	#navbar li
 	{
 		display:inline;
-		margin-right:1%;
-		margin-left:1%;
+		margin-right:3%;
+		margin-left:3%;
 	}
 }
+
+@media screen and (max-width:450px)
+{
+	#navbar li
+	{
+		display:inline;
+		margin-right:3%;
+		margin-left:3%;
+	}
+	
+	#links
+	{
+		width:90%;
+	}
+}
+
+@media screen and (max-width:365px)
+{
+	.hamburger
+	{
+		display:inline-block;
+	}
+	
+	#links
+	{
+		display:none;
+	}
+}
+
+@media screen and (min-width:366px)
+{
+	.hamburger
+	{
+		display:none;
+	}
+	
+	#mobmenu ul
+	{
+		display:none;
+	}
+}
+
+
+
 
 /*========================================== Hero Image ============================================================*/
 
@@ -240,7 +361,7 @@ td
 
 .home #hero
 {
-	background: #1A1A1A url("idea3.jpg");
+	background: #1A1A1A url("lenscropped.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -261,6 +382,7 @@ td
 	position:relative;
 	top:30%;
 	text-shadow: 2px 2px #000;
+	left:5%;
 }
 
 #headline h1
@@ -294,6 +416,19 @@ td
 	}
 }
 
+@media screen and (max-height:335px)
+{
+	.pi #headline h2
+	{
+		display:none;
+	}
+	
+	.pi h1 
+	{
+		display:block;
+	}
+}
+
 @media screen and (max-width:800px)
 {
 
@@ -313,21 +448,49 @@ td
 
 #work
 {
-	background:#fff;
+	background:#EFF1DF;
+}
+
+#work h1
+{
+	color:#35488B;
+}
+
+.case
+{
+	display:block;
+	width:30%;
+	margin:0 auto;
+	margin-bottom:3%;
+}
+
+.caseswrapper
+{
+	display: block;
+	width:100%;
 }
 
 .case img
 {
-	display:inline-block;
-	width:20%;
+	display:block;
+	width:100%;
+}
+
+.case a
+{
+	color:#488A96;
+	text-decoration:none;
+	font-weight:bold;
+	display:block;
+	font-size: 1.2rem;
 }
 
 .description 
 {
-	display:inline-block;
+	display:block;
 	vertical-align:top;
-	margin-left:3%;
 	font-size:1rem;
+	width:100%;
 }
 
 .case .description p ul
@@ -337,7 +500,7 @@ td
 
 .button
 {
-	background-color: #007298;
+	background-color: #5A76C0;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -347,23 +510,28 @@ td
     font-size: 1rem;
 }
 
+.button.cta
+{
+	font-size:1.5rem;
+}
+
 .button:hover
 {
-	background:#004F69;
+	background:#375094;
 }
 
 @media screen and (max-width:1121px)
 {
-	.case img
+	.case
 	{
 		width:50%;	
 	}
 	
 }
 
-@media screen and (max-width:800px)
+@media screen and (max-width:630px)
 {
-	.case img
+	.case
 	{
 		width:100%;
 	}
@@ -374,7 +542,7 @@ td
 #about
 {
 	/*background:#F0F0F0;*/
-	background-image:url("plantc.jpg");
+	background-image:url("lensground1.jpg");
 	color:#fff;
 	padding-top:2%;
 	
@@ -388,6 +556,8 @@ td
 {
 	width:20%;
 	display:inline-block;
+	margin-right:5%;
+	border-radius: 50%;
 }
 
 #about .description
@@ -463,7 +633,7 @@ td
 
 #philosophy
 {
-	background:#1A73B9;
+	background:#35488B;
 	color:#fff;
 }
 
@@ -504,9 +674,27 @@ td
 
 /*========================================== PI ============================================================*/
 
+.pi .content h2
+{
+	color:#35488B;
+}
+
+.pi #work
+{
+	background:#fff;
+}
+
 .pi #diagram
 {
-	width:50%
+	width:50%;
+	display:block;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+
+img.responsive
+{
+	width:100%;
 }
 
 
@@ -535,6 +723,7 @@ td
 	{
 		width:100%;
 	}
+	
 }
 
 @media screen and (max-width:550px)
@@ -548,4 +737,19 @@ td
 	{
 		display:inline-block;
 	}
+
+}
+
+.unresponsivetext
+{
+	display:inline;
+}
+
+@media screen and (max-width:400px)
+{
+	.unresponsivetext
+	{
+		display:none;
+	}
+
 }
