@@ -542,7 +542,7 @@ td
 #about
 {
 	/*background:#F0F0F0;*/
-	background-image:url("lensground1.jpg");
+	background: #1A1A1A url("lensground1.jpg");
 	color:#fff;
 	padding-top:2%;
 	
