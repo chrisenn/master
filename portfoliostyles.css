@@ -378,6 +378,12 @@ td
 	height:60%;
 }
 
+.pan #hero
+{
+	background: #1A1A1A url("pan.jpg") left center/cover no-repeat !important;
+	height:60%;
+}
+
 #headline
 {
 	display:inline-block;
